@@ -11,5 +11,6 @@ Then run ```sudo docker build -t yourtag .``` to build it. The build process wil
 
 To run your image and have it listen on port 80,
 
-    sudo docker run -d -p 80:8080 yourtag
+    sudo docker run -d -p 80:80 yourtag
 
+If you wanted to put a load balancer / reverse proxy in front, you'd want to map it to a port other than 80.
