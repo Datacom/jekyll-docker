@@ -15,7 +15,7 @@ RUN jekyll build
 # Add runit script to run unicorn
 ADD unicorn.sh /etc/service/unicorn/run
 
-# Expose the default port for unicorn
-EXPOSE 8080
+# Expose HTTP port
+EXPOSE 80
 
 CMD ["/sbin/my_init"]
